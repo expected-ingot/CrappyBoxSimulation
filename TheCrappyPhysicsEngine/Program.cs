@@ -1,4 +1,7 @@
-﻿#region Reminders
+﻿// To change the scene: go to "Variables" and edit the scene variable. Each number in the scene variable
+// corresponds to a certain object. The list of objects is at "Reminders" > "Object Types".
+
+#region Reminders
 
 #region Object Types
 // 0: Nothing
@@ -29,7 +32,7 @@ int stepc = 0;
 
 #region Code
 
-Console.WriteLine("Crappy Physics Engine");
+Console.WriteLine("Crappy Box Simulator");
 while(!stopb)
 {
     for (int i = 0; i < 8; i++)
