@@ -17,5 +17,6 @@ Object types:
 | 3 | Push +Col. Pushes movables towards + (right). |
 | 4 | Push -Col. Pushes movables towards - (left). |
 | 5 | End Block. When touched, the simulation ends. |
+| 6 | Push RandomCol. Pushes movables in a random direction. |
 
 
