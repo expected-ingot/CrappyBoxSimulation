@@ -64,7 +64,7 @@ while(!stopb)
                 }
                 if (scene[i+1,j] == 6)
                 {
-                    int randomNumber = new Random().Next(5,10);
+                    int randomNumber = new Random().Next(5,6);
                     if (randomNumber == 5)
                     {
                         scene[i, j] = 0;
