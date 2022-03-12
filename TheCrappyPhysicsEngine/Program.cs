@@ -1,6 +1,6 @@
 ﻿// To change the scene: go to "Variables" and edit the scene variable. Each number in the scene variable
 // corresponds to a certain object. The list of objects is at "Reminders" > "Object Types".
-
+    
 #region Reminders
 
 #region Object Types
@@ -10,6 +10,7 @@
 // 3: Push +Col
 // 4: Push -Col
 // 5: End Block
+// 6: Push RandomCol
 #endregion
 
 #endregion
@@ -61,6 +62,18 @@ while(!stopb)
                 {
                     stopb = true;
                 }
+                if (scene[i+1,j] == 6)
+                {
+                    int randomNumber = new Random().Next(5,10);
+                    if (randomNumber == 5)
+                    {
+                        scene[i, j] = 0;
+                        scene[i, j + 1] = 2;
+                    } else {
+                        scene[i, j] = 0;
+                        scene[i, j - 1] = 2;
+                    }
+                }
             }
         }
         Console.WriteLine("\n");
@@ -69,9 +82,9 @@ while(!stopb)
     {
         for (int j = 0; j < 8; j++)
         {
-            Console.Write(scene[i, j] + "\t");
+            Console.Write(scene[i, j] + " ");
         }
-        Console.WriteLine("\n");
+        Console.WriteLine(" ");
     }
     stepc++;
 }
